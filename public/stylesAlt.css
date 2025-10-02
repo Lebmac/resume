@@ -60,7 +60,7 @@ header {
 
 nav {
     position: fixed;
-    right: 2rem;
+    right: 1rem;
 }
 
 nav ul {
@@ -74,6 +74,7 @@ nav ul li {
     padding: 1rem;
 }
 
+
 a {
     text-decoration: none;
     color: #000;
@@ -85,5 +86,33 @@ footer {
     position: fixed;
     width: 100%;
     z-index: 9;
+}
+
+/* width */
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  opacity: o;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darkolivegreen;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: olivedrab;
+}
+
+a:hover {
+  color: white;
+  font-weight: 800;
+  background-color: darkolivegreen;
+  padding: 1rem;
 
 }
