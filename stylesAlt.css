@@ -33,9 +33,9 @@ footer {
     background-size: cover; /* Scale the image */
 }
 
-.img1 { background-image: url("./assets/images/CJ_UyuniDesert.jpg"); }
-.img2 { background-image: url("./assets/images/CJ_Patagonia.jpg"); }
-.img3 { background-image: url("./assets/images/CJ_IncaTrail.jpg"); }
+.img1 { background-image: url("../assets/images/CJ_UyuniDesert.jpg"); }
+.img2 { background-image: url("../assets/images/CJ_Patagonia.jpg"); }
+.img3 { background-image: url("../assets/images/CJ_IncaTrail.jpg"); }
 
 
 .bg-text {
@@ -87,3 +87,4 @@ footer {
     z-index: 9;
 
 }
+
