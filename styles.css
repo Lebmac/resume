@@ -1,0 +1,136 @@
+/* Colour palette 
+Dark  - #334443
+Mid   - #34656D
+Light - #FAEAB1
+Accent- #FAF8F1
+*/
+
+body {
+    background-color: #334443;
+    background: linear-gradient(to bottom, #334443, #34656D);
+    background-attachment: fixed;
+    margin: 0%;
+}
+
+h1, h2, h3, p, li, a {
+    color: #FAF8F1;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+}
+
+hr {
+    color: #FAF8F1;
+    clear: both;
+    margin: 0px;
+}
+
+div.top {
+    width: 100%;
+    position: fixed;
+    background-color: #334443;
+}
+
+h1 {
+    margin: 3px 1rem;
+    float: left;
+}
+
+h2 {
+    margin-top: 0.5rem;
+    font-weight: 300;
+}
+
+nav {
+    float: right;
+    height: 24px;
+    padding-top: 16px;
+    margin: 3px 1rem;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    list-style-type: none;
+    margin: 0%;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.small {
+    font-size: 8pt;
+    padding: 0%;
+}
+
+footer {
+    bottom: 0px;
+    clear: both;
+    position: fixed;
+    width: 100%;
+    background-color: #334443;
+    z-index: 9;
+}
+
+header {
+    top: 0px;
+    position: fixed;
+    background-color: #334443;
+}
+
+.main-body {
+    position: absolute;
+    top: 48px;
+    bottom: 30px;
+    left: 0px;
+    right: 0px;
+    margin: 0px;
+    padding: 0rem 1rem;
+
+}
+
+.h-container {
+    overflow-x: auto;
+}
+
+.v-container {
+    overflow-y: scroll;
+}
+
+.h-collection {
+    position: flex;
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+.card {
+    padding: 0px 10px;
+}
+
+.thumb {
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid #FAF8F1;
+}
+
+/* width */
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  opacity: o;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #34656D;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #478089;
+}
