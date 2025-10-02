@@ -1,0 +1,88 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: "Syne Mono", monospace;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+    left: 0px;
+    right: 0px;
+    scroll-snap-align: start;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 30pt;
+}
+
+footer {
+    margin: 1rem;
+}
+
+.bg-image {
+    height: 100%; /* Full height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* No repeat */
+    background-size: cover; /* Scale the image */
+}
+
+.img1 { background-image: url("../assets/images/CJ_UyuniDesert.jpg"); }
+.img2 { background-image: url("../assets/images/CJ_Patagonia.jpg"); }
+.img3 { background-image: url("../assets/images/CJ_IncaTrail.jpg"); }
+
+
+.bg-text {
+    background-color: rgba(0,0,0, 0.4); /* Black with opacity */
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    border: 10px solid #f1f1f1;
+    position: fixed; /* Stay fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    position: fixed;
+}
+
+nav {
+    position: fixed;
+    right: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    text-align: right;
+    font-size: 24pt;
+    display: block;
+}
+
+nav ul li {
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer {
+    bottom: 0px;
+    clear: both;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
