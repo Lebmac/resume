@@ -1,0 +1,102 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    /* font-family: "Syne Mono", monospace; */
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+    left: 0px;
+    right: 0px;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+nav {
+    position: fixed;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 30pt;
+}
+
+.bg-image {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -100;
+}
+
+.img1 { background-image: url("./assets/images/CJ_UyuniDesert.jpg"); }
+.img2 { background-image: url("./assets/images/CJ_Patagonia.jpg"); }
+.img3 { background-image: url("./assets/images/CJ_IncaTrail.jpg"); }
+.img4 { background-image: url("./assets/images/CJ_GlacierLake01.jpg"); }
+
+
+footer {
+    clear: both;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    padding: 6px;
+    margin: 0px;
+    bottom: 0px;
+    width: 100%;
+    z-index: 9;
+}
+
+/* width */
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  opacity: o;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darkolivegreen;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: olivedrab;
+}
+
+.bg-img-container {
+    position: relative;
+}
+
+.section-content {
+    position: absolute;
+    top: 80px;
+
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+
+.logo {
+    filter: invert(95%);
+    padding: 0px 5px;
+}
