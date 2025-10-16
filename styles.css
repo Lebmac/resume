@@ -1,117 +1,57 @@
-/* Colour palette 
-Dark  - #334443
-Mid   - #34656D
-Light - #FAEAB1
-Accent- #FAF8F1
-*/
-
-body {
-    background-color: #334443;
-    background: linear-gradient(to bottom, #334443, #34656D);
-    background-attachment: fixed;
-    margin: 0%;
+body, html {
+    height: 100%;
+    margin: 0;
+    /* font-family: "Syne Mono", monospace; */
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
-h1, h2, h3, p, li, a {
-    color: #FAF8F1;
-    font-family: 'Quicksand', sans-serif;
-    text-decoration: none;
-}
-
-hr {
-    color: #FAF8F1;
-    clear: both;
-    margin: 0px;
-}
-
-div.top {
-    width: 100%;
-    position: fixed;
-    background-color: #334443;
-}
-
-h1 {
-    margin: 3px 1rem;
-    float: left;
-}
-
-h2 {
-    margin-top: 0.5rem;
-    font-weight: 300;
+section {
+    height: 100vh;
+    left: 0px;
+    right: 0px;
+    scroll-snap-align: start;
+    position: relative;
 }
 
 nav {
-    float: right;
-    height: 24px;
-    padding-top: 16px;
-    margin: 3px 1rem;
+    position: fixed;
 }
 
-nav ul {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 2rem;
-    list-style-type: none;
-    margin: 0%;
+* {
+    box-sizing: border-box;
 }
 
-.center-text {
-    text-align: center;
+h1 {
+    margin: 1rem;
+    font-size: 30pt;
 }
 
-.small {
-    font-size: 8pt;
-    padding: 0%;
+.bg-image {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -100;
 }
+
+.img1 { background-image: url("./assets/images/CJ_UyuniDesert.jpg"); }
+.img2 { background-image: url("./assets/images/CJ_Patagonia.jpg"); }
+.img3 { background-image: url("./assets/images/CJ_IncaTrail.jpg"); }
+.img4 { background-image: url("./assets/images/CJ_GlacierLake01.jpg"); }
+
 
 footer {
-    bottom: 0px;
     clear: both;
     position: fixed;
-    width: 100%;
-    background-color: #334443;
-    z-index: 9;
-}
-
-header {
-    top: 0px;
-    position: fixed;
-    background-color: #334443;
-}
-
-.main-body {
-    position: absolute;
-    top: 48px;
-    bottom: 30px;
-    left: 0px;
-    right: 0px;
+    display: flex;
+    justify-content: center;
+    padding: 6px;
     margin: 0px;
-    padding: 0rem 1rem;
-
-}
-
-.h-container {
-    overflow-x: auto;
-}
-
-.v-container {
-    overflow-y: scroll;
-}
-
-.h-collection {
-    position: flex;
-    display: inline-flex;
-    flex-wrap: nowrap;
-}
-
-.card {
-    padding: 0px 10px;
-}
-
-.thumb {
-    height: 200px;
-    border-radius: 10px;
-    border: 2px solid #FAF8F1;
+    bottom: 0px;
+    width: 100%;
+    z-index: 9;
 }
 
 /* width */
@@ -127,10 +67,36 @@ header {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #34656D;
+  background: darkolivegreen;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #478089;
+  background: olivedrab;
+}
+
+.bg-img-container {
+    position: relative;
+}
+
+.section-content {
+    position: absolute;
+    top: 80px;
+
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+
+.logo {
+    filter: invert(95%);
+    padding: 0px 5px;
 }
