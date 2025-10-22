@@ -79,7 +79,7 @@
                 questions that reveal insights from team members and create
                 shared understanding.</p> 
               <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                <button type="button" class="btn btn-dark btn-lg px-4 me-md-2 opacity-100">
+                <button type="button" class="btn btn-dark btn-lg px-4 me-md-2 opacity-100" data-bs-toggle="modal" data-bs-target="#contact-me">
                     Get in touch
                 </button>
                 <button type="button" class="btn btn-outline-secondary btn-lg px-4" onclick="window.location.href='#resume';">
@@ -432,66 +432,51 @@
           </div>
         </div>
       </div>
-
-<!--               <div class="col">
-                <div class="d-flex flex-column">
-                  
-                    <div class="card bg-light rounded-3">
-                      <div class="card-body">
-                        <h2 class="lead">Overview</h2>
-                        <p class="small">I’m an automation engineer from New Zealand. I specialise in pharmaceutical automation and love to develop a deep understanding of complex systems. My method puts user experience first, ensuring the operator is informed, and the interface naturally guides them towards useful information at the right time. By this philosophy we safeguard product quality, and therefore patient safety.</p>
-                      </div>
-                    </div>
-                  
-                  
-                    <div class="card bg-light rounded-3">
-                      <div class="card-body">
-                        <h2 class="lead">Professional Journey</h2>
-                        <p class="small">Most recently, I worked with MSD New Zealand as the automation lead for the Stability 23 project. The role gave me opportunities to collaborate with international engineering firms and travel to Singapore to commission hardware. Those experiences deepened my technical expertise and sparked my motivation to take my skills abroad.</p>
-                        <p class="small">Now I’m actively exploring new opportunities overseas. Looking for environments where I can contribute to innovative solutions and products that change the face of the industry.</p>
-                      </div>
-                    </div>
-                    
-                  
-                    <div class="card bg-light rounded-3">
-                      <div class="card-body">
-                        <h2 class="lead">Engineering Philosophy</h2>
-                        <p class="small">I’ve always been curious by nature. I like to dive deeply into systems and how they function, and why. That curiosity drives me to design and deliver automation solutions that are robust, maintainable, and easy to operate. My passion is to make the complex simple, ensuring that automation serves both process performance and the people who interact with it.</p>
-                      </div>
-                    </div>
-                  
-                </div>
-              </div>
-              <div class="col">
-                <div class="d-flex flex-column">
-                  <div class="col">
-                    <div class="card bg-light rounded-3">
-                      <div class="card-body">
-                        <h2 class="lead">Outside of Work</h2>
-                        <p class="small">When I’m not working on automation systems, you’ll usually find me outdoors — kayaking on a local river, running or cycling forest trails, or hiking to a scenic lookout. I enjoy being active and exploring new places, whether that’s a new trail or a new country.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card bg-light rounded-3">
-                      <div class="card-body">
-                        <h2 class="lead">Lets Collaborate</h2>
-                        <p class="small">I’m currently open to new opportunities abroad where I can continue growing as an engineer, collaborating across cultures, and applying myself to challenging and meaningful projects.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> 
-          </div>
-        </div>
-      </div> -->
     </section>
 
 
 
 
 <!-- Modals -->
+    <div class="modal fade" id="contact-me" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="wrap-contact100">
+            
+            <h2 class="modal-title pb-3 pt-2">
+              Get in touch
+            </h2>
+
+            <form class="contact100-form" action="https://formsubmit.co/camjam36@gmail.com" method="POST"">
+
+              <div class="wrap-input100 bg1" data-validate="Please type your name">
+                <span class="label-input100">Full name *</span>
+                <input class="input100" type="text" name="name" placeholder="Your name">
+              </div>
+
+              <div class="wrap-input100 bg1" data-validate="Please type your email (address@domain.com)">
+                <span class="label-input100">Email *</span>
+                <input class="input100" type="text" name="email" placeholder="Your email">
+              </div>
+
+              <div class="wrap-input100 bg1" data-validate="Please Type Your Message">
+                <span class="label-input100">Message</span>
+                <textarea class="input100" name="message" placeholder="Your message"></textarea>
+              </div>
+
+              <button class="btn btn-outline-dark btn-lg px-5 mb-2" type="submit">
+                <span>
+                  Send
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </span>
+              </button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <div class="modal fade" id="modal-one" tabindex="-1" aria-labelledby="modal-label-one" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -655,4 +640,5 @@
 
   </body>
 </html>
+
 
